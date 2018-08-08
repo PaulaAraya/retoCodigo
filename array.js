@@ -131,7 +131,41 @@ console.log(output); // --> true
 */
 
 //Ejericio 6
+function findShortestWordAmongMixedElements(arr) {
+  if(arr.length === 0){ //si el array está vacio retorna string ""
+     return '';
+   }
+   let arr2 = [];
+   for (let i = 0; i < arr.length; i++) { 
+    if(typeof arr[i] === 'string'){
+      arr2.push(arr[i]);
+     }
+    }
+   if(arr2.length === 0){
+     return '';
+   }
+   let finalArr = arr2[0];
+   for (let j = 1 ; j < arr2.length; j++){
+     if(finalArr.length > arr2[j].length){
+       finalArr = arr2[j]
+     }
+   }
+   return finalArr;
+ } 
 
 /*
+Escriba una función llamada "findShortestWordAmongMixedElements".
 
+Dado un array, "findShortestWordAmongMixedElements" devuelve la cadena más corta dentro del array dado.
+
+Notas:
+
+Si hay vínculos, debería devolver el primer elemento que aparezca en el array dado.
+Espere que el array tenga otros valores además de las cuerdas.
+Si el array dado está vacío, debería devolver una cadena vacía.
+Si el array dado no contiene cadenas, debería devolver una cadena vacía.
+Ejemplo:
+
+var output = findShortestWordAmongMixedElements([4, 'two', 2, 'three']);
+console.log(output); // --> 'two'
 */
