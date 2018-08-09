@@ -169,3 +169,23 @@ Ejemplo:
 var output = findShortestWordAmongMixedElements([4, 'two', 2, 'three']);
 console.log(output); // --> 'two'
 */
+
+//ejercicio 7
+
+/*
+ */
+
+//ejercicio 8
+
+/*
+ */
+
+//ejercicio 9
+
+/*
+ */
+
+ //ejercicio 10
+
+/*
+ */ 

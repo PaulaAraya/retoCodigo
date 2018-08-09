@@ -17,9 +17,9 @@ console.log(ouput); // -> 2
 
  //ejercicio 2
  function removeStringValuesLongerThan(num, obj) {
-  for (let ruta in obj){
-    if(obj[ruta].length > num){
-      delete obj[ruta];
+  for (let propiedad in obj){
+    if(obj[propiedad].length > num){
+      delete obj[propiedad];
     } 
   }
   return obj
